@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="/icons8-whatsapp-96.png"
+    />
+    <script src="/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- <div class="header"> -->
+      <div class="logo-search-div">
+        <h2>WhatsApp</h2>
+        <div class="icon-gr">
+          <i class="fa fa-light fa-magnifying-glass" id="search-icon"></i>
+          <i class="fa fa-light fa-ellipsis-vertical" id="menu-ico"></i>
+        </div>
+      </div>
+      <div class="search-bar">
+        <div class="search-bar-input">
+          <i class="fa fa-thin fa-arrow-left" id="back-icon"></i>
+          <input type="text" id="input-box" placeholder="Search..." />
+        </div>
+        <div class="search-bar-sub-icon-gr">
+          <div class="search-bar-sub-icon">
+            <i class="fa-solid fa-image"></i>
+            <span>Photos</span>
+          </div>
+          <div class="search-bar-sub-icon">
+            <i class="fa-solid fa-video"></i>
+            <span>Videos</span>
+          </div>
+          <div class="search-bar-sub-icon">
+            <i class="fa-solid fa-link"></i>
+            <span>Links</span>
+          </div>
+          <div class="search-bar-sub-icon">
+            <i class="fa-solid fa-gif"></i>
+            <span>Gifs</span>
+          </div>
+          <div class="search-bar-sub-icon">
+            <i class="fa-solid fa-headphones"></i>
+            <span>Audios</span>
+          </div>
+          <div class="search-bar-sub-icon">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Documents</span>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-navbar-div">
+        <i class="fa fa-light fa-camera"></i>
+        <ul class="tabs">
+          <li class="tab active" data-tab-target="#chat">CHATS</li>
+          <li class="tab" data-tab-target="#status">STATUS</li>
+          <li class="tab" data-tab-target="#call">CALLS</li>
+        </ul>
+        <ul id="hidden-menu" class="active-menu">
+          <li class="hidden-menu-item">New group</li>
+          <li class="hidden-menu-item">New broadcast</li>
+          <li class="hidden-menu-item">Linked device</li>
+          <li class="hidden-menu-item">Starred Message</li>
+          <li class="hidden-menu-item">Payments</li>
+          <li class="hidden-menu-item">Settings</li>
+        </ul>
+      </div>
+      <!-- </div> -->
+      <div class="main-content">
+        <!-- CHAT -->
+        <div class="chat-section active-tab" data-tab-content id="chat">
+          <div class="archived-div">
+            <i class="fa-solid fa-box-archive"></i>
+            <span>Archived</span>
+          </div>
+        </div>
+
+        <!-- Status -->
+        <div class="status-section" data-tab-content id="status">
+          <div class="msg-div" id="z-1">
+            <i class="fa-solid fa-plus"></i>
+            <div class="contact-img my-status-plus">
+              <img
+                src="https://picsum.photos/500/400?random=5"
+                alt="hello"
+                class="c-img"
+              />
+            </div>
+            <div class="contact-name-msg-div">
+              <div class="contact-name-time">
+                <span class="c-name">My Status</span>
+              </div>
+              <div class="contact-msg">Tap to add status update</div>
+            </div>
+          </div>
+          <p class="update-head">Recent Updates</p>
+        </div>
+
+        <!-- CALL -->
+        <div class="calls-section" data-tab-content id="call"></div>
+      </div>
+    </div>
+  </body>
+</html>
